@@ -34,7 +34,7 @@ server.set("views", path.join(path.resolve(), "src", "view"));
 server.use(express.urlencoded({ extended: true }));
 server.use(express.static("public"));
 server.use(express.static("src/view"));
-server.use(express.static("src/static"));
+//server.use(express.static("resume"));
 server.use(express.json());
 server.use(expressLayouts);
 server.use(cookieParser());

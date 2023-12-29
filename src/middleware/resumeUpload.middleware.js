@@ -2,7 +2,7 @@ import multer from "multer";
 import path from "path";
 const storageConfig = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, path.join(path.resolve(), "src", "static", "resume"));
+    cb(null, path.join(path.resolve(), "public", "resume"));
   },
   filename: (req, file, cb) => {
     const name = Date.now() + "-" + file.originalname;
