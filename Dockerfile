@@ -6,5 +6,6 @@ WORKDIR  /app
 COPY . /app
 ###install the package
 RUN npm install
+EXPOSE 3000
 ##command to run 
 CMD ["node","server.js"]
